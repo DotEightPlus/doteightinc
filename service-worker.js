@@ -1,11 +1,6 @@
 var CACHE_NAME = 'pwgen-cache';
 var urlsToCache = [
     'index.php',
-    'careers.php',
-    'covid-19.php',
-    'contact.php',
-    'product.php',
-    'about.php',
     'images/logo.png'
 ];
 console.log('loading sw');
