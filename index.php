@@ -198,9 +198,6 @@
     <script src="js/aos.js"></script>
     <script src="ajax.js"></script>
     <script src="js/main.js"></script>
-    <script type="text/javascript"> 
-  window.addEventListener("load", $("#exampleModa").modal());
-</script>
   </body>
 
 </html>
