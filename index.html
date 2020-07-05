@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Coming Soon 1</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>DotEightInc</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="UTF-8">
+    <meta name="description" content="DotEightInc">
+    <meta name="keywords" content="DotEightInc">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="theme-color" content="#FF3435">
 <!--===============================================================================================-->	
-	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+	
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
 <!--===============================================================================================-->
@@ -17,6 +23,9 @@
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="css/util.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+	<link rel="manifest" href="manifest.json">
+    <link type="image/x-icon" rel="shortcut icon" href="images/logo.png">
 <!--===============================================================================================-->
 </head>
 <body>
@@ -51,7 +60,7 @@
 		<!-- Form -->
 		<div class="size3 flex-col-sb flex-w p-l-75 p-r-75 p-t-45 p-b-45 respon1">
 			<div class="wrap-pic1">
-				<img src="images/icons/logo.png" alt="LOGO">
+				<img src="images/dotsvg.svg" alt="DotEightInc">
 			</div>
 
 			<div class="p-t-50 p-b-60">
@@ -83,16 +92,20 @@
 			</div>
 
 			<div class="flex-w">
-				<a href="#" class="flex-c-m size5 bg3 how1 trans-04 m-r-5">
+				<a target="_blank" href="https://web.facebook.com/DotEightInc/" class="flex-c-m size5 bg3 how1 trans-04 m-r-5">
 					<i class="fa fa-facebook"></i>
 				</a>
 
-				<a href="#" class="flex-c-m size5 bg4 how1 trans-04 m-r-5">
+				<a target="_blank" href="https://twitter.com/doteight" class="flex-c-m size5 bg4 how1 trans-04 m-r-5">
 					<i class="fa fa-twitter"></i>
 				</a>
 
-				<a href="#" class="flex-c-m size5 bg5 how1 trans-04 m-r-5">
-					<i class="fa fa-youtube-play"></i>
+				<a target="_blank" href="https://github.com/DotEightInc" class="flex-c-m size5 bg5 how1 trans-04 m-r-5">
+					<i class="fa fa-github"></i>
+				</a>
+
+				<a target="_blank" href="https://linkedin.com/company/DotEightInc" class="flex-c-m size5 bg5 how1 trans-04 m-r-5">
+					<i class="fa fa-linkedin"></i>
 				</a>
 			</div>
 		</div>
@@ -138,6 +151,44 @@
 	</script>
 <!--===============================================================================================-->
 	<script src="js/main.js"></script>
-
+	     <script>
+  if ('serviceWorker' in navigator) {
+    console.log("Will the service worker register?");
+    navigator.serviceWorker.register('service-worker.js')
+      .then(function(reg){
+        console.log("Yes, it did.");
+      }).catch(function(err) {
+        console.log("No it didn't. This happened: ", err)
+      });
+  }
+</script>
+<script src="service-worker.js">
+        // Service worker for Progressive Web App
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-worker.js', {
+            scope: '.' // THIS IS REQUIRED FOR RUNNING A PROGRESSIVE WEB APP FROM A NON_ROOT PATH
+        }).then(function(registration) {
+            // Registration was successful
+            console.log('ServiceWorker registration successful with scope: ', registration.scope);
+        }, function(err) {
+            // registration failed :(
+            console.log('ServiceWorker registration failed: ', err);
+        });
+    }
+</script>
+<!-- Chatra {literal} -->
+<script>
+    (function(d, w, c) {
+        w.ChatraID = 'ja683hMdJq7WmiXAb';
+        var s = d.createElement('script');
+        w[c] = w[c] || function() {
+            (w[c].q = w[c].q || []).push(arguments);
+        };
+        s.async = true;
+        s.src = 'https://call.chatra.io/chatra.js';
+        if (d.head) d.head.appendChild(s);
+    })(document, window, 'Chatra');
+</script>
+<!-- /Chatra {/literal} -->
 </body>
 </html>
