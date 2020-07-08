@@ -1,157 +1,829 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-	<title>DotEightInc</title>
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <head>
+    <title>DotEightInc.</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta charset="UTF-8">
     <meta name="description" content="DotEightInc">
     <meta name="keywords" content="DotEightInc">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
-    <meta name="theme-color" content="#FF3435">
-<!--===============================================================================================-->	
-	
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="css/util.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
+    <meta name="theme-color" content="#FF0000"> 
+    
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
 
-	<link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="manifest" href="manifest.json">
     <link type="image/x-icon" rel="shortcut icon" href="images/logo.png">
-<!--===============================================================================================-->
-</head>
-<body>
-	
-	
-	<div class="size1 bg0 where1-parent">
-		<!-- Coutdown -->
-		<div class="flex-c-m bg-img1 size2 where1 overlay1 where2 respon2" style="background-image: url('images/bg01.jpg');">
-			<div class="wsize2 flex-w flex-c-m cd100 js-tilt">
-				<div class="flex-col-c-m size6 bor2 m-l-10 m-r-10 m-t-15">
-					<span class="l2-txt1 p-b-9 days">35</span>
-					<span class="s2-txt4">Days</span>
-				</div>
+    
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+  
 
-				<div class="flex-col-c-m size6 bor2 m-l-10 m-r-10 m-t-15">
-					<span class="l2-txt1 p-b-9 hours">17</span>
-					<span class="s2-txt4">Hours</span>
-				</div>
-
-				<div class="flex-col-c-m size6 bor2 m-l-10 m-r-10 m-t-15">
-					<span class="l2-txt1 p-b-9 minutes">50</span>
-					<span class="s2-txt4">Minutes</span>
-				</div>
-
-				<div class="flex-col-c-m size6 bor2 m-l-10 m-r-10 m-t-15">
-					<span class="l2-txt1 p-b-9 seconds">39</span>
-					<span class="s2-txt4">Seconds</span>
-				</div>
-			</div>
-		</div>
-		
-		<!-- Form -->
-		<div class="size3 flex-col-sb flex-w p-l-75 p-r-75 p-t-45 p-b-45 respon1">
-			<div class="wrap-pic1">
-				<img src="images/dotsvg.svg" alt="DotEightInc">
-			</div>
-
-			<div class="p-t-50 p-b-60">
-				<p class="m1-txt1 p-b-36">
-					Our website is <span class="m1-txt2">Coming Soon</span>, follow us for update now!
-				</p>
-
-				<form class="contact100-form validate-form">
-					<div class="wrap-input100 m-b-10 validate-input" data-validate = "Name is required">
-						<input class="s2-txt1 placeholder0 input100" type="text" name="name" placeholder="Your Name">
-						<span class="focus-input100"></span>
-					</div>
-
-					<div class="wrap-input100 m-b-20 validate-input" data-validate = "Email is required: ex@abc.xyz">
-						<input class="s2-txt1 placeholder0 input100" type="text" name="email" placeholder="Email Address">
-						<span class="focus-input100"></span>
-					</div>
-
-					<div class="w-full">
-						<button class="flex-c-m s2-txt2 size4 bg1 bor1 hov1 trans-04">
-							Subscribe
-						</button>
-					</div>
-				</form>
-
-				<p class="s2-txt3 p-t-18">
-					And don’t worry, we hate spam too! You can unsubcribe at anytime.
-				</p>
-			</div>
-
-			<div class="flex-w">
-				<a target="_blank" href="https://web.facebook.com/DotEightInc/" class="flex-c-m size5 bg3 how1 trans-04 m-r-5">
-					<i class="fa fa-facebook"></i>
-				</a>
-
-				<a target="_blank" href="https://twitter.com/doteight" class="flex-c-m size5 bg4 how1 trans-04 m-r-5">
-					<i class="fa fa-twitter"></i>
-				</a>
-
-				<a target="_blank" href="https://github.com/DotEightInc" class="flex-c-m size5 bg5 how1 trans-04 m-r-5">
-					<i class="fa fa-github"></i>
-				</a>
-
-				<a target="_blank" href="https://linkedin.com/company/DotEightInc" class="flex-c-m size5 bg5 how1 trans-04 m-r-5">
-					<i class="fa fa-linkedin"></i>
-				</a>
-			</div>
-		</div>
-	</div>
+  <div id="overlayer"></div>
+  <div class="loader">
+    <div class="spinner-border text-primary" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+  </div>
 
 
+  <div class="site-wrap">
 
-	
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+   
+    
+    <header class="site-navbar js-sticky-header site-navbar-target" role="banner">
+        <p class="animated infinite" align="center" style="background-color: black; font-size: 19px; color: white; width: 100%;"><strong>Have you washed your hands?👋 &nbsp;&nbsp;&nbsp;&nbsp; #StaySafe #StayHome<i class="arrow_right"></i></a></strong></p>
+      <div class="container">
+        <div class="row align-items-center">
+          
+          <div class="col-6 col-xl-2">
+            <h1 class="mb-0 site-logo"><a href="index.html" class="h2 mb-0">DotEightInc<span class="text-primary">.</span> </a></h1>
+          </div>
 
-<!--===============================================================================================-->	
-	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/bootstrap/js/popper.js"></script>
-	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/select2/select2.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/countdowntime/moment.min.js"></script>
-	<script src="vendor/countdowntime/moment-timezone.min.js"></script>
-	<script src="vendor/countdowntime/moment-timezone-with-data.min.js"></script>
-	<script src="vendor/countdowntime/countdowntime.js"></script>
-	<script>
-		$('.cd100').countdown100({
-			/*Set Endtime here*/
-			/*Endtime must be > current time*/
-			endtimeYear: 0,
-			endtimeMonth: 0,
-			endtimeDate: 35,
-			endtimeHours: 18,
-			endtimeMinutes: 0,
-			endtimeSeconds: 0,
-			timeZone: "" 
-			// ex:  timeZone: "America/New_York"
-			//go to " http://momentjs.com/timezone/ " to get timezone
-		});
-	</script>
-<!--===============================================================================================-->
-	<script src="vendor/tilt/tilt.jquery.min.js"></script>
-	<script >
-		$('.js-tilt').tilt({
-			scale: 1.1
-		})
-	</script>
-<!--===============================================================================================-->
-	<script src="js/main.js"></script>
-	     <script>
+          <div class="col-12 col-md-10 d-none d-xl-block">
+            <nav class="site-navigation position-relative text-right" role="navigation">
+
+              <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+                <li><a href="#home-section" class="nav-link">Home</a></li>
+                 <li><a href="#products" class="nav-link">Products</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="./DotAccount" class="nav-link">DotAccount</a></li>
+                <li><a href="#contact-section" class="nav-link">Contact</a></li>
+                <li class="social"><a data-toggle="tooltip" title="facebook" target="_blank" href="https://web.facebook.com/DotEightInc/" class="nav-link"><span class="icon-facebook"></span></a></li>
+                <li class="social"><a data-toggle="tooltip" title="twitter" target="_blank" href="https://twitter.com/doteight" class="nav-link"><span class="icon-twitter"></span></a></li>
+                <li class="social"><a data-toggle="tooltip" title="linkedin" target="_blank" href="https://linkedin.com/company/DotEightInc" class="nav-link"><span class="icon-linkedin"></span></a></li>
+                 <li class="social"><a data-toggle="tooltip" title="github" target="_blank" href="https://www.youtube.com/channel/UCUyrcTSpbP7RafgzzbxA6TA" class="nav-link"><span class="icon-youtube-play"></span></a></li>
+                  <li class="social"><a data-toggle="tooltip" title="instagram" target="_blank" href="https://instagram.com/DotEightInc" class="nav-link"><span class="icon-instagram"></span></a></li>
+              </ul>
+            </nav>
+          </div>
+
+
+          <div class="col-6 d-inline-block d-xl-none ml-md-0 py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle float-right"><span class="icon-menu h3"></span></a></div>
+
+        </div>
+      </div>
+      
+    </header>
+
+  
+     
+    <div class="site-blocks-cover overlay" style="background-image: url(images/logo.png);" data-aos="fade" id="home-section">
+
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+
+          
+          <div class="col-md-10 mt-lg-5 text-center">
+            <div class="single-text owl-carousel">
+              <div class="slide">
+                <h1 class="text-uppercase" data-aos="fade-up">We provide online campus solutions</h1>
+                <p class="mb-5 desc"  data-aos="fade-up" data-aos-delay="100">We are curios about making and delivering a stress and hustle free experience on campuses with the aid of online products that promote fun filled experience.</p>
+                <div data-aos="fade-up" data-aos-delay="100">
+                </div>
+              </div>
+
+              <div class="slide">
+                <h1 class="text-uppercase" data-aos="fade-up">We Build Business Web Confidence</h1>
+                <p class="mb-5 desc"  data-aos="fade-up" data-aos-delay="100">With a team of tech prodigies that spans across different fields, we can share our skill sets in building your business confidence on the web</p>
+              </div>
+
+              <div class="slide">
+                <h1 class="text-uppercase" data-aos="fade-up">One Account, Muliptle Products</h1>
+                <p class="mb-5 desc"  data-aos="fade-up" data-aos-delay="100">Signup on our <strong>DotAccount</strong> and get unlimited access to all our products and service from a single click on your dashboard</p>
+              </div>
+
+            </div>
+          </div>
+            
+        </div>
+      </div>
+
+      <a href="#next" class="mouse smoothscroll">
+        <span class="mouse-icon">
+          <span class="mouse-wheel"></span>
+        </span>
+      </a>
+    </div>  
+
+    
+    <div class="site-section cta-big-image" id="next">
+      <div class="container">
+        <div class="row mb-5 justify-content-center">
+          <div class="col-md-8 text-center">
+            <h2 class="section-title mb-3" data-aos="fade-up" data-aos-delay="">Our Expertise, Our Innovation</h2>
+            <p class="lead" data-aos="fade-up" data-aos-delay="100"></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="">
+            <figure class="circle-bg">
+            <img src="images/bg_4.jpg" alt="about us" class="img-fluid">
+            </figure>
+          </div>
+          <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
+            
+            <h3 class="text-black mb-4">We Love Students</h3>
+
+            <p>Welcome to DotEightInc.</p>
+
+            <p>DotEightInc is a tech startup committed towards creating and developing campus online solutions that will aid hustle and stress free campus experience for every student.</p>
+
+            <p>Not only do we provide campus online solutions, but we also share our skill sets in building businesses confidence on the web.</p>
+            
+          </div>
+        </div>    
+        
+      </div>  
+    </div>
+
+   
+
+
+    <section class="site-section">
+      <div class="container">
+
+        <div class="row mb-5 justify-content-center">
+          <div class="col-md-7 text-center">
+            <h2 class="section-title mb-3" data-aos="fade-up" data-aos-delay="">How We Work</h2>
+            <p class="lead" data-aos="fade-up" data-aos-delay="100">Follow our three simple step to get unliimited access to our products and services</p>
+          </div>
+        </div>
+        
+        <div class="row align-items-lg-center" >
+          <div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="">
+
+            <div class="owl-carousel slide-one-item-alt">
+              <img src="images/slide_1.jpg" alt="Image" class="img-fluid">
+              <img src="images/slide_2.jpg" alt="Image" class="img-fluid">
+              <img src="images/slide_3.jpg" alt="Image" class="img-fluid">
+            </div>
+            <div class="custom-direction">
+              <a style="background: red;" href="#" class="custom-prev"><span style="color: white;"><span class="icon-keyboard_backspace"></span></span></a><a style="background: red" href="#" class="custom-next"><span style="color: white;"><span class="icon-keyboard_backspace"></span></span></a>
+            </div>
+
+          </div>
+          <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
+            
+            <div class="owl-carousel slide-one-item-alt-text">
+              <div>
+                <h2 class="section-title mb-3">01. Create a DotAccount</h2>
+                <p>Signup for a <strong>DotAccount</strong> which gives you full unlimited access to all our products and sevices. With one <strong>DotAccount</strong>, you have all access to our products and services straightaway from your account dashboard</p>
+
+                <p><a href="#" class="btn btn-primary mr-2 mb-2">Signup</a></p>
+              </div>
+              <div>
+                <h2 class="section-title mb-3">02. Verify <br/>your account</h2>
+                <p>After signinup, verify your email address and phone number to tells us that those details really belong to you. Also, we use those details to restore back your account once you forget your password or something gets wrong with your account</p>
+                <p><a href="#" class="btn btn-primary mr-2 mb-2">Get Started</a></p>
+              </div>
+              <div>
+                <h2 class="section-title mb-3">03. Get <br/>Unlimited access</h2>
+                <p>Once you`ve done the first steps, use your Dot-ID to get unlimited access to our products and online services. Pretty Simple!</p>
+
+                <p><a href="#" class="btn btn-primary mr-2 mb-2">Sign in</a></p>
+              </div>
+              
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+        <div class="site-section cta-big-image bg-light" id="products">
+      <div class="container">
+        <div class="row mb-5 justify-content-center">
+          <div class="col-md-8 text-center">
+            <h2 class="section-title mb-3" data-aos="fade-up" data-aos-delay="">Our Upcoming Products</h2>
+            <p class="lead" data-aos="fade-up" data-aos-delay="100"></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="">
+            <figure class="circle-bg">
+            <img src="images/pediaplus.png" alt="about us" class="img-fluid">
+            </figure>
+          </div>
+          <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
+            
+            <h3 class="text-black mb-4">PediaPlus</h3>
+
+            <p>coming soon!</p>
+
+            <p>PediaPlus is a service from DotEightInc. Committed and developed towards providing lectures PDFs and making every student lecture hustle and stress free.</p>
+
+           
+          </div>
+        </div>    
+
+
+        <div class="row">
+          <div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="">
+            <figure class="circle-bg">
+            <img src="images/AttendPlus.png" alt="about us" class="img-fluid">
+            </figure>
+          </div>
+          <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
+            
+            <h3 class="text-black mb-4">AttendPlus</h3>
+
+            <p>coming soon!</p>
+
+            <p>Online attendance solution for Univeristies, Polytechnics, Colleges of Education and other higher institution body.</p>
+
+            <p>Submit all attendance with an inbuilt sms delivered to the lecturer receiving the attendance</p>
+           
+          </div>
+        </div>    
+        
+      </div>  
+    </div>
+    
+
+
+
+      <div class="site-section cta-big-image bg-white" id="job">
+      <div class="container">
+        <div class="row mb-5 justify-content-center">
+          <div class="col-md-8 text-center">
+            <h2 class="section-title mb-3" data-aos="fade-up" data-aos-delay="">Our Latest work</h2>
+            <p class="lead" data-aos="fade-up" data-aos-delay="100"></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="">
+            <figure class="circle-bg">
+            <img src="images/pms.png" alt="about us" class="img-fluid">
+            </figure>
+          </div>
+          <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
+            
+            <h3 class="text-black mb-4">Paradise Model School<br/> Website</h3>
+
+            <p>Launched!</p>
+
+            <p>A website with full portal activities for Paradise Model School, Iyana Iyesi, Ota. Ogun State Nigeria.</p>
+            <br/>
+           <p class="text-center">
+                <a target="_blank" href="https://paradisemodelschool.com.ng" class="btn btn-primary">Click here to view</a>
+              </p>
+          </div>
+        </div>    
+
+
+        <div class="row">
+          <div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="">
+            <figure class="circle-bg">
+            <img src="images/phs.png" alt="about us" class="img-fluid">
+            </figure>
+          </div>
+          <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
+            
+            <h3 class="text-black mb-4">Pleasant Home School <br/>Website</h3>
+
+            <p>Launched!</p>
+
+            <p>Pleasant Home School website with full portal activities plus automated entrance sms</p>
+
+            <br/>
+           <p class="text-center">
+                <a target="_blank" href="https://pleasanthomeschool.com.ng" class="btn btn-primary">Click here to view</a>
+              </p>
+           
+          </div>
+        </div>    
+
+
+         <div class="row">
+          <div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="">
+            <figure class="circle-bg">
+            <img src="images/cbt.png" alt="about us" class="img-fluid">
+            </figure>
+          </div>
+          <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
+            
+            <h3 class="text-black mb-4">De-Guide Light School <br/>offline CBT Software</h3>
+
+            <p>Completed!</p>
+
+            <p>Computer Based Test software for mulitipurpose exams and test. Integrated uploading of questions and view of answers and results.</p>
+
+            <p>Automatic marking and immediate result after completion of exam or test.</p>
+
+            <br/>
+           <p class="text-center">
+                <a target="_blank" href="https://cbt.herokuapp.com" class="btn btn-primary">Click here to view</a>
+              </p>
+           
+          </div>
+        </div>    
+
+
+
+         <div class="row">
+          <div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="">
+            <figure class="circle-bg">
+            <img src="images/swth.png" alt="about us" class="img-fluid">
+            </figure>
+          </div>
+          <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
+            
+            <h3 class="text-black mb-4">Switch NG <br/>e-commerce store</h3>
+
+            <p>Pending!</p>
+
+            <p>An ecommerce store that allows you to swap your old product for a new one or buy a completely new product.</p>
+
+          
+
+            <br/>
+          
+           
+          </div>
+        </div>    
+        
+      </div>  
+    </div>
+    
+
+    <section class="site-section border-bottom bg-light" id="services">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-12 text-center" data-aos="fade">
+            <h2 class="section-title mb-3">Our Services</h2>
+          </div>
+        </div>
+        <div class="row align-items-stretch">
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up">
+            <div class="unit-4">
+              <div class="unit-4-icon">
+                <img src="images/flaticon-svg/svg/computer.svg" alt="website design" class="img-fluid w-25 mb-4">
+              </div>
+              <div>
+                <h3>Website Design & Development</h3>
+                <p>We create awesome and mobile responsive websites, built in with latest web technologies to help build your business confidence on the web</p>
+                <p><a href="tel: +2348103171902">Learn More</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="unit-4">
+              <div class="unit-4-icon">
+                <img src="images/flaticon-svg/svg/shopping-cart.svg" alt="ecommerce site" class="img-fluid w-25 mb-4">
+              </div>
+              <div>
+                <h3>E-commerce site</h3>
+                <p>Got a store? We can help take your store online and integrate an online payment gateway which could be used to charge your customers from anywhere in the world.</p>
+                <p><a href="tel: +2348103171902">Talk to us</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="unit-4">
+              <div class="unit-4-icon">
+                <img src="images/flaticon-svg/svg/cms.svg" alt="CMS" class="img-fluid w-25 mb-4">
+              </div>
+              <div>
+                <h3>Content Management Systems</h3>
+                <p>Get your activites automated. Transit from paperwork to an efficient automated online organizer</p>
+                <p><a href="tel: +2348103171902">Learn More</a></p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="">
+            <div class="unit-4">
+              <div class="unit-4-icon">
+                <img src="images/flaticon-svg/svg/application.svg" alt="Mobile App" class="img-fluid w-25 mb-4">
+              </div>
+              <div>
+                <h3>Mobile App Development</h3>
+                <p>We develop cross platform mobile appilication for both Android and iOS. Give your customers the cross feel anywhere and anytime</p>
+                <p><a href="tel: +2348103171902">Get Started</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="unit-4">
+              <div class="unit-4-icon">
+                <img src="images/flaticon-svg/svg/tour.svg" alt="Vrtual Tours" class="img-fluid w-25 mb-4">
+              </div>
+              <div>
+                <h3>Virtual Tours</h3>
+                <p>Give your customers the ability to view your business inside-out from wherever they may be without them moving an inch. Virtual Tours helps tell more about your business location and environment</p>
+                <p><a href="tel: +2348103171902">Learn More</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="unit-4">
+              <div class="unit-4-icon">
+                <img src="images/flaticon-svg/svg/chatbot.svg" alt="chatbots" class="img-fluid w-25 mb-4">
+              </div>
+              <div>
+                <h3>Chatbot Development</h3>
+                <p>Respond to your customers even when you are away or offline. Our chatbots are designed efficiently based on keywords and adapt as time goes on.</p>
+                <p><a href="tel: +2348103171902">Create yours</a></p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="site-section testimonial-wrap" id="testimonials-section" data-aos="fade">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-12 text-center">
+            <h2 class="section-title mb-3">Happy Customers</h2>
+          </div>
+        </div>
+      </div>
+      <div class="slide-one-item home-slider owl-carousel">
+          <div>
+            <div class="testimonial">
+              
+              <blockquote class="mb-5">
+                <p>&ldquo;Great customer support always!.&rdquo;</p>
+              </blockquote>
+
+              <figure class="mb-4 d-flex align-items-center justify-content-center">
+                <div><img src="images/person_1.jpg" alt="Image" class="w-50 img-fluid mb-3"></div>
+                <p>Simi</p>
+              </figure>
+            </div>
+          </div>
+          <div>
+            <div class="testimonial">
+
+              <blockquote class="mb-5">
+                <p>&ldquo;Awesome beespoken web contents.&rdquo;</p>
+              </blockquote>
+              <figure class="mb-4 d-flex align-items-center justify-content-center">
+                <div><img src="images/profile.png" alt="Image" class="w-50 img-fluid mb-3"></div>
+                <p>Paradise Model School</p>
+              </figure>
+              
+            </div>
+          </div>
+
+          <div>
+            <div class="testimonial">
+
+              <blockquote class="mb-5">
+                <p>&ldquo;Great Customer follow up.&rdquo;</p>
+              </blockquote>
+              <figure class="mb-4 d-flex align-items-center justify-content-center">
+                <div><img src="images/de.jpg" alt="Image" class="w-50 img-fluid mb-3"></div>
+                <p>De-Guide Light School</p>
+              </figure>
+
+              
+            </div>
+          </div>
+
+        </div>
+    </section>
+
+    <section class="site-section bg-light" id="pricing-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-12 text-center" data-aos="fade-up">
+            <h2 class="section-title mb-3">Our Pricing</h2>
+          </div>
+        </div>
+        <div class="row mb-5">
+          <div class="col-md-6 mb-4 mb-lg-0 col-lg-4" data-aos="fade-up" data-aos-delay="">
+            <div class="pricing">
+              <h3 class="text-center text-black">Static Website Design<br/>(FrontEnd Only)</h3>
+              <div class="price text-center mb-4 ">
+                <span><span>NGN35 000</span> / 1st year only</span>
+              </div>
+              <ul class="list-unstyled ul-check success mb-5">
+                
+                <li>NGN15 000  - Renewal Fee per year</li>
+                 <li>Free SSL Certificate <sup style="color: white; background: red">NEW</sup></li>
+                <li>Maximum of 5 pages</li>
+                <li>3 Weeks Money-back guarantee</li>
+                <li>Mobile Responsive</li>
+                 <li>2 free webmail <sup style="color: white; background: red">NEW</sup></li>
+                <li>Free .com.ng domain <sup style="color: white; background: red">NEW</sup></li>
+                <li>10GB Bandwidth/month</li>
+              </ul>
+              <p class="text-center">
+                <a href="./DotAccount" class="btn btn-secondary">Choose Plan</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-4 mb-lg-0 col-lg-4 pricing-popular" data-aos="fade-up" data-aos-delay="100">
+            <div class="pricing">
+              <h3 class="text-center text-black">Content Management System</h3>
+              <div class="price text-center mb-4 ">
+                <span><span>NGN120 000</span> 1st year only</span>
+              </div>
+              <ul class="list-unstyled ul-check success mb-5">
+                
+                <li>NGN35 000  - Renewal Fee per year</li>
+                <li>Unlimited Database</li>
+                <li>Mobile Responsive</li>
+                <li>30 days Money-back guarantee</li>
+                <li>5 subdomains</li>
+                <li>Unlimited Bandwidth</li>
+                <li>Free SSL Certificate <sup style="color: white; background: red">NEW</sup></li>
+                <li>NGN2 000 per user update</li>
+                <li>unlimited Disk Space</li>
+                <li>Free .com.ng domain <sup style="color: white; background: red">NEW</sup></li>
+
+              </ul>
+              <p class="text-center">
+                <a href="./DotAccount" class="btn btn-primary">Buy Now</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-4 mb-lg-0 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="pricing">
+              <h3 class="text-center text-black">Android Mobile Application</h3>
+              <div class="price text-center mb-4 ">
+                <span><span>NGN75 000</span> / one time fee</span>
+              </div>
+              <ul class="list-unstyled ul-check success mb-5">
+                
+                <li>Forever on PlayStore</li>
+                <li>2 Weeks Money-back guarantee</li>
+                <li>Maximum of 8 activities</li>
+                <li>Unlimited Database</li>
+                <li>NO RENEWAL FEE</li>
+                <li>3 Months Maintenance and Update</li>
+              </ul>
+              <p class="text-center">
+                <a href="./DotAccount" class="btn btn-secondary">Buy Now</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="row site-section" id="faq-section">
+          <div class="col-12 text-center" data-aos="fade">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            
+            <div class="mb-5" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="text-black h4 mb-4">How do I pay for DotEightInc Services?</h3>
+            <p>Paying for DotEightInc services and products is 100% easy and stress free. Choose from your DotAccount dashboard, the product or service you are paying for and click on the button beneath the service or product card to pay using your ATM Card or using USSD.</p>
+            <p>Kindly note that you will be charged 1.4% processing fee per transactions from the payment gateway.</p>
+            </div>
+            
+            <div class="mb-5" data-aos="fade-up" data-aos-delay="100">
+              <h3 class="text-black h4 mb-4">What`s your refund policy?</h3>
+              <p>We refund back your money if your request for a refund is within the range of the stipulated time indicated in every services.</p>
+              <p>On refund, we give back 95% of your initial pay because of charges encountered during refund.</p>
+              <p>Please note that, we do not offer refund for payment on use of products. We only offer refunds for active and delivered services.</p>
+            </div>
+
+            <div class="mb-5" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="text-black h4 mb-4">What`s a Domain Name?</h3>
+            <p>A domain name is a unique identity that recognizes you on the web. Once you register a domain name, no other person can use that domain untill it expires. A domain name is always renewed yearly. A domain name comes with different domain extensions like .com, .com.ng, .ng, .xyz, .org e.t.c</p>
+            <p>Presently, DotEightInc offers free a .com.ng domain when you buy an annual hosting plan with us</p>
+            <p>Note that we do not refund fee for domain registrations.</p>
+            </div>
+          
+          </div>
+          <div class="col-lg-6">
+
+             
+            <div class="mb-5" data-aos="fade-up" data-aos-delay="100">
+              <h3 class="text-black h4 mb-4">Can I build my website myself and Host with DotEightInc?</h3>
+              <p>Sure! Why not?</p>
+              <p>DotEightInc has a service for web developers which enables you to launch your website on our hosting plans. We also give you a free .com.ng domain when you purchase an annual hosting plan with us.</p>
+            </div>
+            
+            <div class="mb-5" data-aos="fade-up" data-aos-delay="100">
+              <h3 class="text-black h4 mb-4">Can I Upload my Android Application on DotEightInc Playstore Console?</h3>
+              <p>Yes! You can.</p>
+              <p>We give mobile developers the right to publish their application on our Playstore console for a fee of NGN3 000 per year.</p>
+              <p>Before we publish your app, your app undergoes 1 week of verification to check out what your application is really about and doesn`t contain any illegal activities</p>
+              <p>We also give you back a refund after 1 week of publishing your app, if you aren`t satisfied with our service</p>
+            </div>
+
+            <div class="mb-5" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="text-black h4 mb-4">How do I delete or deactivate my DotAccount?</h3>
+            <p>Incase you feel unsecured, you can suspend your account anytime from the account settings tab on your DotAccount dashboard</p>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="site-section" id="contact-section" data-aos="fade">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-12 text-center">
+            <h2 class="section-title mb-3">Contact Us</h2>
+          </div>
+        </div>
+        <div class="row mb-5">
+          
+
+
+          <div class="col-md-4 text-center">
+            <p class="mb-4">
+              <span class="icon-room d-block h2 text-primary"></span>
+              <span>Ikole-Ekiti, Ikole, Ekiti State. Nigeria</span>
+            </p>
+          </div>
+          <div class="col-md-4 text-center">
+            <p class="mb-4">
+              <span class="icon-phone d-block h2 text-primary"></span>
+              <a href="tel: +2348103171902">+234 (0)810 317 1902</a>
+            </p>
+          </div>
+          <div class="col-md-4 text-center">
+            <p class="mb-0">
+              <span class="icon-mail_outline d-block h2 text-primary"></span>
+              <a href="mailto: support@doteightinc.com">support@doteightinc.com</a>
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 mb-5">
+
+            
+
+            <form name="contact" method="post" class="p-5 bg-white">
+              
+              <h2 class="h4 text-black mb-5">Contact Form</h2> 
+
+              <div class="row form-group">
+                <div class="col-md-6 mb-3 mb-md-0">
+                  <label class="text-black" for="fname">First Name</label>
+                  <input type="text" id="fname" class="form-control">
+                </div>
+                <div class="col-md-6">
+                  <label class="text-black" for="lname">Last Name</label>
+                  <input type="text" id="lname" class="form-control">
+                </div>
+              </div>
+
+              <div class="row form-group">
+                
+                <div class="col-md-12">
+                  <label class="text-black" for="email">Email</label> 
+                  <input type="email" id="email" class="form-control">
+                </div>
+              </div>
+
+              <div class="row form-group">
+                
+                <div class="col-md-12">
+                  <label class="text-black" for="subject">Subject</label> 
+                  <input type="subject" id="subject" class="form-control">
+                </div>
+              </div>
+
+              <div class="row form-group">
+                <div class="col-md-12">
+                  <label class="text-black" for="message">Message</label> 
+                  <textarea name="message" id="message" cols="30" rows="7" class="form-control" placeholder="Write your notes or questions here..."></textarea>
+                </div>
+              </div>
+
+
+                 <div class="row form-group">
+                <div class="col-md-12">
+                  <p class="text-black" for="message" id="msg"></p>
+                </div>
+              </div>
+
+              <div class="row form-group">
+                <div class="col-md-12">
+                  <input type="button" id="sub" value="Send Message" class="btn btn-primary btn-md text-black">
+                </div>
+              </div>
+
+  
+            </form>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-9">
+            <div class="row">
+              <div class="col-md-5">
+                <h2 class="footer-heading mb-4">About Us</h2>
+                <p>DotEightInc is a tech hub dedicated towards building building online campus solutions that aids stress and hustle free campus experience</p>
+              </div>
+              <div class="col-md-3 ml-auto">
+                <h2 class="footer-heading mb-4">Quick Links</h2>
+                <ul class="list-unstyled">
+                  <li><a href="./DotAccount" class="smoothscroll">DotAccount</a></li>
+                  <li><a href="./careers" class="smoothscroll">Careers</a></li>
+                  <li><a href="./DotAccount" class="smoothscroll">DotEight for developers</a></li>
+                  <li><a href="#services" class="smoothscroll">Services</a></li>
+                  <li><a href="#testimonials-section" class="smoothscroll">Testimonials</a></li>
+                  <li><a href="#contact-section" class="smoothscroll">Contact Us</a></li>
+                </ul>
+              </div>
+              <div class="col-md-3 footer-social">
+                <h2 class="footer-heading mb-4">Follow Us</h2>
+                <a target="_blank" href="https://web.facebook.com/DotEightInc/" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
+                <a target="_blank" href="https://twitter.com/doteight" class="pl-0 pr-3"><span class="icon-twitter"></span></a>
+                <a target="_blank" href="https://instagram.com/DotEightInc" class="pl-0 pr-3"><span class="icon-instagram"></span></a>
+                <a target="_blank" href="https://linkedin.com/company/DotEightInc" class="pl-0 pr-3"><span class="icon-linkedin"></span></a>
+                <a target="_blank" href="https://www.youtube.com/channel/UCUyrcTSpbP7RafgzzbxA6TA" class="pl-0 pr-3"><span class="icon-youtube-play"></span></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <h2 class="footer-heading mb-4">Subscribe Newsletter</h2>
+            <form name="subcribe" method="post" class="footer-subscribe">
+              <div class="input-group mb-3">
+                <input type="email" class="form-control border-secondary text-white bg-transparent" placeholder="Enter Email" id="emailler" aria-label="Enter Email" aria-describedby="button-addon2">
+                <div class="input-group-append">
+                  <button class="btn btn-primary text-black" type="button" id="subscrip">Send</button>
+                </div>
+              </div>
+            </form>
+             <p class="text-white" for="message" id="gsm"></p>
+          </div>
+        </div>
+        <div class="row pt-5 mt-5 text-center">
+          <div class="col-md-12">
+            <div class="border-top pt-5">
+              <p class="copyright">
+             
+            &copy; DotEightInc <script>document.write(new Date().getFullYear());</script>
+          </p>
+        
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </footer>
+
+  </div> <!-- .site-wrap -->
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.countdown.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/jquery.sticky.js"></script>
+  <script src="js/isotope.pkgd.min.js"></script>
+  <script src="ajax.js"></script>
+  
+  <script src="js/main.js"></script>
+       <script>
   if ('serviceWorker' in navigator) {
     console.log("Will the service worker register?");
     navigator.serviceWorker.register('service-worker.js')
@@ -176,19 +848,6 @@
         });
     }
 </script>
-<!-- Chatra {literal} -->
-<script>
-    (function(d, w, c) {
-        w.ChatraID = 'ja683hMdJq7WmiXAb';
-        var s = d.createElement('script');
-        w[c] = w[c] || function() {
-            (w[c].q = w[c].q || []).push(arguments);
-        };
-        s.async = true;
-        s.src = 'https://call.chatra.io/chatra.js';
-        if (d.head) d.head.appendChild(s);
-    })(document, window, 'Chatra');
-</script>
-<!-- /Chatra {/literal} -->
-</body>
+  
+  </body>
 </html>
