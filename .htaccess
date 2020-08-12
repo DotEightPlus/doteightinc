@@ -1,6 +1,6 @@
-ErrorDocument 404 /./opps
-ErrorDocument 403 /./opps
-ErrorDocument 500 /./opps
+ErrorDocument 404 https://doteightinc.com/opps
+ErrorDocument 403 https://doteightinc.com/opps
+ErrorDocument 500 https://doteightinc.com/opps
 
 RewriteEngine on 
 RewriteCond %{REQUEST_FILENAME} !-d

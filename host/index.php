@@ -3,140 +3,8 @@
 
 <head>
        <title>DotHost</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">   
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta charset="UTF-8">
-    <meta name="description" content="DotEightInc">
-    <meta name="keywords" content="DotEightInc">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
-    <meta name="theme-color" content="#252163"> 
 
-    <!-- Favicon -->
-    <link rel="manifest" href="manifest.json">
-    <link type="image/x-icon" rel="shortcut icon" href="images/logo.svg">
-
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900&display=swap"
-        rel="stylesheet">
-
-    <!-- Css Styles -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
-    <link rel="stylesheet" href="css/flaticon.css" type="text/css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
-    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
-</head>
-
-<body>
-    <!-- Page Preloder -->
-    <div id="preloder">
-        <div class="loader"></div>
-    </div>
-
-    <!-- Offcanvas Menu Begin -->
-    <div class="offcanvas__menu__overlay"></div>
-    <div class="offcanvas__menu__wrapper">
-        <div class="canvas__close">
-            <span class="fa fa-times-circle-o"></span>
-        </div>
-        <div class="offcanvas__logo">
-            <a href="#"><img src="img/logo.png" alt=""></a>
-        </div>
-        <nav class="offcanvas__menu mobile-menu">
-            <ul>
-                <li class="active"><a href="./index.html">Home</a></li>
-                <li><a href="./about.html">About</a></li>
-                <li><a href="./hosting.html">Hosting</a></li>
-                <li><a href="#">Pages</a>
-                    <ul class="dropdown">
-                        <li><a href="./pricing.html">Pricing</a></li>
-                        <li><a href="./blog-details.html">Blog Details</a></li>
-                        <li><a href="./404.html">404</a></li>
-                    </ul>
-                </li>
-                <li><a href="./blog.html">News</a></li>
-                <li><a href="./contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <div id="mobile-menu-wrap"></div>
-        <div class="offcanvas__auth">
-            <ul>
-                <li><a href="#"><span class="icon_chat_alt"></span> Live chat</a></li>
-                <li><a href="#"><span class="fa fa-user"></span> Login / Register</a></li>
-            </ul>
-        </div>
-        <div class="offcanvas__info">
-            <ul>
-                <li><span class="icon_phone"></span> +1 123-456-7890</li>
-                <li><span class="fa fa-envelope"></span> Support@gmail.com</li>
-            </ul>
-        </div>
-    </div>
-    <!-- Offcanvas Menu End -->
-
-    <!-- Header Section Begin -->
-    <header class="header-section">
-        <div class="header__info">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 col-md-6">
-                        <div class="header__info-left">
-                            <ul>
-                                <li><span class="icon_phone"></span> +234 (0)810 317 1902</li>
-                                <li><span class="fa fa-envelope"></span> Support@doteightinc.com</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6">
-                        <div class="header__info-right">
-                            <ul>
-                                <li><a href="#"><span class="icon_chat_alt"></span> Live chat</a></li>
-                                <li><a href="#"><span class="fa fa-user"></span> Login / Register</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-3">
-                    <div class="header__logo">
-                        <a href="./index.html"><img src="images/cover.png" alt=""></a>
-                    </div>
-                </div>
-                <div class="col-lg-9 col-md-9">
-                    <nav class="header__menu">
-                        <ul>
-                            <li class="active"><a href="./index.html">Home</a></li>
-                            <li><a href="./about.html">About</a></li>
-                            <li><a href="./hosting.html">Hosting</a></li>
-                            <li><a href="#">Pages</a>
-                                <ul class="dropdown">
-                                    <li><a href="./pricing.html">Pricing</a></li>
-                                    <li><a href="./blog-details.html">Blog Details</a></li>
-                                    <li><a href="./404.html">404</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="./blog.html">News</a></li>
-                            <li><a href="./contact.html">Contact</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-            <div class="canvas__open">
-                <span class="fa fa-bars"></span>
-            </div>
-        </div>
-    </header>
-    <!-- Header End -->
-
+       <?php include("includes/header.php"); ?>
     <!-- Hero Section Begin -->
     <section class="hero-section">
         <div class="hero__slider owl-carousel">
@@ -164,7 +32,7 @@
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="hero__text">
-                                <h5>Starting only at NGN3,000 / year</h5>
+                                <h5>Starting only at NGN1,500 / year</h5>
                                 <h2>Students Hosting<br /> Plan</h2>
                                 <a href="#" class="primary-btn">Get started now</a>
                             </div>
@@ -195,11 +63,11 @@
                         <ul>
                             <li><span class="fa fa-check"></span> FREE Domain Name</li>
                             <li><span class="fa fa-check"></span> FREE SSL</li>
-                            <li><span class="fa fa-check"></span> Unlimited Diskspace disk space</li>
+                            <li><span class="fa fa-check"></span> Unlimited Diskspace</li>
                             <li><span class="fa fa-check"></span> Unlimted Bandwidth</li>
                             <li><span class="fa fa-check"></span> 1-Click WordPress Install</li>
                         </ul>
-                        <a href="#" class="primary-btn">Get start now</a>
+                        <a href="#" class="primary-btn">Get started now</a>
                     </div>
                 </div>
             </div>
@@ -222,7 +90,7 @@
                     <div class="services__item">
                         <h5>Shared Hosting</h5>
                         <span>Starts at NGN6,000/year</span>
-                        <p>Get started on our linux shared hosting and bring your website alive</p>
+                        <p>Get started on our Linux shared hosting and bring your website alive</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6">
@@ -257,7 +125,7 @@
                     <div class="services__item">
                         <h5>Cloud server</h5>
                         <span>coming soon</span>
-                        <p>our hosting for cloud is under construction. We`ll notify you once available.</p>
+                        <p>Our hosting for cloud is under construction. We`ll notify you once available.</p>
                     </div>
                 </div>
             </div>
@@ -288,14 +156,13 @@
             <div class="row monthly__plans active">
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="pricing__item">
-                        <h4>Student Hosting</h4>
-                        <h3>NGN3,000 <span>/ year</span></h3>
+                        <h4>Student</h4>
+                        <h3>NGN 200 <span>/ month</span></h3>
                         <ul>
                             <li>1 GB web space</li>
                             <li>5GB Bandwidth</li>
                             <li>Static Website Only</li>
                             <li>Free Email Forwarders</li>
-                            <li>No Free Domain</li>
                             <li>No Cpanel</li>
                             <li>No Installable App</li>
                             <li>3 days money back</li>
@@ -309,11 +176,10 @@
                         <h3>NGN6,000 <span>/ year</span></h3>
                         <ul>
                             <li>10GB GB web space</li>
-                            <li>20GB Bandwidth</li>
+                            <li>100GB Bandwidth</li>
                             <li>Active Cpanel</li>
-                            <li>No Free Domain</li>
-                            <li>5 Webmails</li>
-                            <li>Unlimited Database</li>
+                            <li>Unlimited Email Account</li>
+                            <li>MySQL Database</li>
                             <li>1-Click WordPress Install</li>
                             <li>7 days money back</li>
                         </ul>
