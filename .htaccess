@@ -1,4 +1,4 @@
-ErrorDocument 404 https://doteightinc.com/opps
+ErrorDocument 404 http://localhost/doteightinc/opps
 ErrorDocument 403 https://doteightinc.com/opps
 ErrorDocument 500 https://doteightinc.com/opps
 
