@@ -1,3 +1,16 @@
+<?php
+if(!isset($_GET['id']) && !isset($_GET['new'])) {
+	header("location: ./error");
+} else {
+
+	include("functions/init.php");
+	if($_SESSION['token'] == $_GET['id']) {
+	verified();
+} else {
+	header("location: ./error");
+}
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,44 +49,31 @@
 	<div class="container-login100" style="background-image: url('images/opp.jpg');">
 		<div class="wrap-login100 p-l-55 p-r-55 p-t-80 p-b-30">
 			<form class="login100-form validate-form">
-				<span data-animation="fadeInUp" data-delay="200ms" class="login100-form-title p-b-37">
-					Welcome Back
+				<span data-animation="fadeInUp" data-delay="200ms" class="login100-form-title p-b-37">Verification Successful
 				</span>
 
-				<div class="wrap-input100 validate-input m-b-20" data-validate="Enter username or email">
-					<input class="input100" type="text" name="username" placeholder="username or email">
-					<span class="focus-input100"></span>
-				</div>
+				<div class="text-center  p-b-20">
+					<a>
+					<span class="txt1">
+						Your account has been verified sucessfully
 
-				<div class="wrap-input100 validate-input m-b-25" data-validate = "Enter password">
-					<input class="input100" type="password" name="pass" placeholder="password">
-					<span class="focus-input100"></span>
+
+					</span>
+				</a>
 				</div>
 
 				<div class="container-login100-form-btn">
 
-					<button class="login100-form-btn">
-						Sign In
-					</button>
+					<a style="color: white;" href="./signin" class="login100-form-btn">
+						Sign in
+					</a>
 
 					
 				</div>
 
 
+			
 
-				<div class="text-center p-t-27 p-b-20">
-					<a href="#">
-					<span class="txt1">
-						Forgot Password 
-					</span>
-				</a>
-				</div>
-
-				<div class="flex-c p-t-12 p-b-11">
-					<button id="signup" class="login10-form-btn">
-						New User?
-					</button>
-				</div>
 
 			
 			</form>
@@ -87,6 +87,7 @@
 	
 
 	<div id="dropDownSelect1"></div>
+	
 	
 <!--===============================================================================================-->
 	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
@@ -104,30 +105,6 @@
 	<script src="vendor/countdowntime/countdowntime.js"></script>
 <!--===============================================================================================-->
 	<script src="js/main.js"></script>
-
-	<script>
-		
-		document.getElementById('signup').addEventListener('click', myfun);
-
-		function myfun()
-		{
-			var xhr = new  XMLHttpRequest();
-			xhr.open('GET', 'signup.html', true);
-
-			xhr.onload = function ()
-			{
-				if (xhr.status == 200) {
-					//document.write(this.responseText);
-					document.getElementById('display').innerHTML=xhr.responseText;
-				} else {
-
-					document.write('File not Found');
-				}
-			}
-
-			xhr.send();
-		}
-	</script>
 
 </body>
 </html>
