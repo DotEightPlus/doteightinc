@@ -8,7 +8,7 @@ if(!isset($_GET['id'])){
 	$data = $_GET['id'];
 	if($_SESSION['login'] != $data) {
 
-		header("location: ./error");
+		header("location: ./signin");
 	} else {
 
 		$uuid = md5($data);
