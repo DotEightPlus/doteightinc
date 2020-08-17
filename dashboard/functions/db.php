@@ -1,6 +1,6 @@
 <?php
 //creating the database to use
-$con = mysqli_connect("localhost","root","","acct");
+$con = mysqli_connect("bcvk5gaitxebi446miuy-mysql.services.clever-cloud.com","unfsy1fmw5qzkoyi","vYJHPCLAGApFQVEdT6hI","bcvk5gaitxebi446miuy");
 
 function row_count($result) {
 	global $con;
