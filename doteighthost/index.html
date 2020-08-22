@@ -189,9 +189,9 @@
                 <div class="col-12 col-md-8">
                     <div class="domain-search-form mb-100">
                         <!-- Search Form -->
-                        <form method="post" class="form-inline">
-                            <input type="search" placeholder="Enter Your Domain Name Here">
-                            <button type="button">Search Domain</button>
+                        <form action="https://domainavailablitychecker.herokuapp.com" method="get" class="form-inline">
+                            <input type="search" id="searching" placeholder="Enter Your Domain Name Here">
+                            <button type="submit" id="search">Search Domain</button>
                         </form>
 
                         <!-- Domain Price Help -->
@@ -703,6 +703,7 @@
     <script src="js/bootstrap.min.js"></script>
     <!-- All Plugins -->
     <script src="js/hami.bundle.js"></script>
+    <script src="js/ajax.js"></script>
     <!-- Active -->
     <script src="js/default-assets/active.js"></script>
     <script>!function(e,t,a){var c=e.head||e.getElementsByTagName("head")[0],n=e.createElement("script");n.async=!0,n.defer=!0, n.type="text/javascript",n.src=t+"/static/js/chat_widget.js?config="+JSON.stringify(a),c.appendChild(n)}(document,"https://app.engati.com",{bot_key:"92512df1eca84de8",welcome_msg:true,branding_key:"DotHost",server:"https://app.engati.com",e:"p" });</script>
