@@ -1,5 +1,8 @@
 [[redirects]]
-  from = "https://doteighthost.doteightinc.com/"
-  to = "https://doteightinc.com/doteighthost/"
-  status = 200
-  force = true
+  from = "/*"
+  to = "/opps"
+  status = 404
+[[headers]]
+  for = "/*"
+    [headers.values]
+    Access-Control-Allow-Origin = "*"
