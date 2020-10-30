@@ -65,13 +65,6 @@ include("functions/init.php");
 
 
 
-				<div class="text-center p-t-27 p-b-20">
-					<a href="./forgot">
-					<span class="txt1">
-						Forgot Password 
-					</span>
-				</a>
-				</div>
 
 				<div class="flex-c p-t-12 p-b-11">
 					<a href="./signup" class="login10-form-btn">

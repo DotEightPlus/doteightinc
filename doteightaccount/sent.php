@@ -21,20 +21,20 @@ if(!isset($_SESSION['sent'])) {
 	$headers .= "MIME-Version: 1.0\r\n";
 	$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 
-    $subject = "Account Verification";
+    $subject = "Sign in";
 
-    $logo = 'http://localhost/doteightinc/dashboard/images/white.svg';
+    $logo = 'http://localhost/doteightinc/doteightaccount/images/white.svg';
     $url  = 'https://dotaccount.doteightinc.com';
-    $link = 'http://localhost/doteightinc/dashboard/./?id='.$token;
+    $link = 'http://localhost/doteightinc/doteightaccount/dashboard/./?id='.$token;
 
 	$body = "<!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'><title>DotAccount - DotEightInc</title></head><body style='text-align: center;'>";
 	$body .= "<section style='margin: 30px; margin-top: 50px ; background: #FF0000; color: white;'>";
 	$body .= "<img style='margin-top: 35px; width: 50px; height: 50px;' src='{$logo}' alt='DotAccount - DotEightInc'>";
-	$body .= "<h1 style='margin-top: 45px; color: #ffffff'><strong>Account Verification</strong></h1>
+	$body .= "<h1 style='margin-top: 45px; color: #ffffff'><strong>Account Sign-in</strong></h1>
 		<br/>";
-	$body .= "<p style='margin-left: 45px; margin-top: 34px; text-align: left; font-size: 17px;'>Hi there!. Thank you for creating an account with us.</p>
+	$body .= "<p style='margin-left: 45px; margin-top: 34px; text-align: left; font-size: 17px;'>Hi there!. Here is your sign in link to your dashboard .</p>
 		<br/>";
-	$body .= "<p style='margin-left: 45px; text-align: left;'><a href='{$link}' style='color: #fbb710; text-decoration: none'>Click here to activate your account</a></p>
+	$body .= "<p style='margin-left: 45px; text-align: left;'><a href='{$link}' style='color: #fbb710; text-decoration: none'>Click here to sign in to your account</a></p>
 		<br/>";
 	$body .= "<p style='margin-left: 45px; text-align: left;'>For Support, call or chat: 08103171902</p>";	
 	$body .= "<p style='margin-left: 45px; text-align: left;'>or write to: support@doteightinc.com</p>
@@ -93,7 +93,7 @@ if(!isset($_SESSION['sent'])) {
 				<div class="text-center  p-b-20">
 					<a>
 					<span class="txt1">
-						We`ve sent a login link to your email address
+						We`ve sent a login link to your email address<br> Make sure you check your spam folders also.
 
 
 					</span>
@@ -152,6 +152,8 @@ if(!isset($_SESSION['sent'])) {
 	<script src="vendor/countdowntime/countdowntime.js"></script>
 <!--===============================================================================================-->
 	<script src="js/main.js"></script>
+
+	
 
 </body>
 </html>

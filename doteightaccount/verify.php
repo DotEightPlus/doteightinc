@@ -6,47 +6,8 @@ if(!isset($_SESSION['email'])) {
 	header("location: ./error");
 
 } else {
-
-	$email 				= $_SESSION['email'];
-	$token 				= md5(rand(0, 99999999999));
-    $_SESSION['token']  = $token;
-
-
-	$to 		= $email;
-    $from 		= "noreply@doteightinc.com";
-
-
-    $headers = "From: $from";
-	$headers = "From: " . $from . "\r\n";
-	$headers .= "Reply-To: ". $from . "\r\n";
-	$headers .= "MIME-Version: 1.0\r\n";
-	$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
-
-    $subject = "Account Verification";
-
-    $logo = 'http://localhost/doteightinc/dashboard/images/white.svg';
-    $url  = 'https://dotaccount.doteightinc.com';
-    $link = 'http://localhost/doteightinc/dashboard/./verified?id='.$token.'&new='.$to;
-
-	$body = "<!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'><title>DotAccount - DotEightInc</title></head><body style='text-align: center;'>";
-	$body .= "<section style='margin: 30px; margin-top: 50px ; background: #FF0000; color: white;'>";
-	$body .= "<img style='margin-top: 35px; width: 50px; height: 50px;' src='{$logo}' alt='DotAccount - DotEightInc'>";
-	$body .= "<h1 style='margin-top: 45px; color: #ffffff'><strong>Account Verification</strong></h1>
-		<br/>";
-	$body .= "<p style='margin-left: 45px; margin-top: 34px; text-align: left; font-size: 17px;'>Hi there!. Thank you for creating an account with us.</p>
-		<br/>";
-	$body .= "<p style='margin-left: 45px; text-align: left;'><a href='{$link}' style='color: #fbb710; text-decoration: none'>Click here to activate your account</a></p>
-		<br/>";
-	$body .= "<p style='margin-left: 45px; text-align: left;'>For Support, call or chat: 08103171902</p>";	
-	$body .= "<p style='margin-left: 45px; text-align: left;'>or write to: support@doteightinc.com</p>
-		<br/>";	
-	$body .= "<p style='margin-left: 45px; text-align: left;'>Best Regards</p>";	
-	$body .= "<p style='margin-left: 45px; text-align: left; padding-bottom: 50px;'><i>Dot Team</i></p>";	
-	$body .= "</section>";	
-	$body .= "</body></html>";
-
-    $send = mail($to, $subject, $body, $headers);
-    unset($_SESSION['email']);
+	unset($_SESSION['guest']);	
+ validate_verify();
 
 }
 ?>
@@ -95,7 +56,8 @@ if(!isset($_SESSION['email'])) {
 					<a>
 					<span class="txt1">
 						Hi there!<br/> Thank you for creating an account with us. <br/>
-						Kindly check your registered email address for a verification link.
+						Kindly check your registered email address for a verification link. <br> Make sure you check your spam folders also.
+
 
 
 					</span>

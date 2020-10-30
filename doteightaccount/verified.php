@@ -1,10 +1,9 @@
 <?php
+include("functions/init.php");
 if(!isset($_GET['id']) && !isset($_GET['new'])) {
 	header("location: ./error");
-} else {
-
-	include("functions/init.php");
-	if($_SESSION['token'] == $_GET['id']) {
+} else { 
+if($_SESSION['token'] == $_GET['id']) {
 	verified();
 } else {
 	header("location: ./error");

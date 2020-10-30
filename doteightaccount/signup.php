@@ -1,6 +1,5 @@
 <?php
 include("functions/init.php");
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -57,11 +56,23 @@ include("functions/init.php");
 					<span class="focus-input100"></span>
 				</div>
 
-				
+	<?php if(isset($_SESSION['guest'])) {
+		 echo '
+			
 				<div class="wrap-input100 validate-input m-b-20" data-validate="Input Email">
+					<input class="input100" type="email" name="email" value="'.$_SESSION['guest'].'" >
+					<span class="focus-input100"></span>
+				</div>';
+			} else {
+
+				echo '
+					<div class="wrap-input100 validate-input m-b-20" data-validate="Input Email">
 					<input class="input100" type="email" name="email" placeholder="Email Address">
 					<span class="focus-input100"></span>
 				</div>
+				';
+			}	
+?>
 
 
 
@@ -77,13 +88,7 @@ include("functions/init.php");
 
 
 
-				<div class="text-center p-t-27 p-b-20">
-					<a href="./forgot">
-					<span class="txt1">
-						Forgot Password 
-					</span>
-				</a>
-				</div>
+				
 
 				<div class="flex-c p-t-12 p-b-11">
 						<a href="./signin" class="login10-form-btn">
@@ -130,6 +135,7 @@ if(isset($_SESSION['signup'])) {
 document.getElementById("display").innerHTML = "'.$_SESSION['signup'].'";
 </script>';
 unset($_SESSION['signup']);
+unset($_SESSION['guest']);
 }
 ?>
 
