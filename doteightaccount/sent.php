@@ -25,7 +25,7 @@ if(!isset($_SESSION['sent'])) {
 
     $logo = 'http://localhost/doteightinc/doteightaccount/images/white.svg';
     $url  = 'https://dotaccount.doteightinc.com';
-    $link = 'http://localhost/doteightinc/doteightaccount/dashboard/./?id='.$token;
+    $link = 'https://dotaccount.doteightinc.com/dashboard/./au?id='.$token;
 
 	$body = "<!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'><title>DotAccount - DotEightInc</title></head><body style='text-align: center;'>";
 	$body .= "<section style='margin: 30px; margin-top: 50px ; background: #FF0000; color: white;'>";

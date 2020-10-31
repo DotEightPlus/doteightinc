@@ -64,7 +64,7 @@ function register_user() {
 
 	$datereg = date("Y-m-d h:i:sa");
 
-	$const 	= ".me-";
+	$const 	= "dotme-";
 	$id 	= rand(0, 9999);
 
 	$user  = $const.$id;
@@ -160,6 +160,49 @@ function verified() {
 	$result = query($sql);
 	confirm($result);
 
+
+	$sql2 = "SELECT * FROM `users` WHERE `email` = '$email'";
+	$result2 = query($sql2);
+	if(row_count($result2) == 1) {
+	$row = mysqli_fetch_array($result2);
+
+	$userID =  $row['user_id'];
+
+}
+
+	$to 		= $email;
+    $from 		= "noreply@doteightinc.com";
+
+
+    $headers = "From: $from";
+	$headers = "From: " . $from . "\r\n";
+	$headers .= "Reply-To: ". $from . "\r\n";
+	$headers .= "MIME-Version: 1.0\r\n";
+	$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
+
+    $subject = "Verification Successful";
+
+    $logo = 'https://dotaccount.doteightinc.com/images/white.svg';
+    $url  = 'https://dotaccount.doteightinc.com';
+    
+	$body = "<!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'><title>DotAccount - DotEightInc</title></head><body style='text-align: center;'>";
+	$body .= "<section style='margin: 30px; margin-top: 50px ; background: #FF0000; color: white;'>";
+	$body .= "<img style='margin-top: 35px; width: 50px; height: 50px;' src='{$logo}' alt='DotAccount - DotEightInc'>";
+	$body .= "<h1 style='margin-top: 45px; color: #ffffff'><strong>Verification Successful</strong></h1>
+		<br/>";
+	$body .= "<p style='margin-left: 45px; margin-top: 34px; text-align: left; font-size: 17px;'>Hi there!. Thank you for creating an account with us. <br/><br/> With DotAccount, you have exclusive access to every<br/> products and services from DotEightInc.</p>
+		<br/>";
+	$body .= "<p style='margin-left: 45px; text-align: left; color: #fbb710;'>Your DotAccount ID is <strong>'{$userID}'</strong></p>
+		<br/>";
+	$body .= "<p style='margin-left: 45px; text-align: left;'>For Support, call or chat: 08103171902</p>";	
+	$body .= "<p style='margin-left: 45px; text-align: left;'>or write to: support@doteightinc.com</p>
+		<br/>";	
+	$body .= "<p style='margin-left: 45px; text-align: left;'>Best Regards</p>";	
+	$body .= "<p style='margin-left: 45px; text-align: left; padding-bottom: 50px;'><i>Dot Team</i></p>";	
+	$body .= "</section>";	
+	$body .= "</body></html>";
+
+    $send = mail($to, $subject, $body, $headers);
 
 }
 
@@ -373,29 +416,17 @@ if (isset($_POST['token']) && isset($_SESSION['logid'])) {
 	$two = clean($_POST['token']);
 
 	$api_id = md5($two.$one);
-	if($api_id == $_SESSION['logid']) {
-		$_SESSION['api_key_id'] = $api_id;
-	$url = "http://localhost/doteightinc/doteightaccount/api";
+	$order_id = $api_id;
+	$url = "http://localhost/doteightinc/doteightaccount/api/api/".$order_id;
 	
 	$client = curl_init($url);
 	curl_setopt($client,CURLOPT_RETURNTRANSFER,true);
 	$response = curl_exec($client);
-	
 	$result = json_decode($response);
-
+	
 	$_SESSION['result'] = $result;
-
-	
-	
-} else {
-	session_destroy();
-	redirect("./apierror");
-} 
-} else {
-	session_destroy();
-	redirect("./apierror");
-}   
-}  
+}
+}
 
 
 

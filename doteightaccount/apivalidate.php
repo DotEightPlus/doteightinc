@@ -1,9 +1,7 @@
 <?php
 include("functions/init.php");
 api_token();
-
-$result = $_SESSION['result']; 
-
+$result = $_SESSION['result']
 ?>
 
 
@@ -45,38 +43,13 @@ $result = $_SESSION['result'];
 	<div class="container-login100" style="background-image: url('images/opp.jpg');">
 		<div class="wrap-login100 p-l-55 p-r-55 p-t-80 p-b-30">
 			<form class="login100-form validate-form">
-				<span data-animation="fadeInUp" data-delay="200ms" class="login100-form-title p-b-37">Hi  <?php echo $result->firstname." ".$result->lastname; ?>
+				<span data-animation="fadeInUp" data-delay="200ms" class="login100-form-title p-b-37">First Name: <?php echo $result->fname?> <br><br>
+				Last Name:  <?php echo $result->lname?> <br><br>
+				User-ID:	<?php echo $result->userid?> <br><br>
+				Email:		<?php echo $result->email?> <br><br>
 				</span>
 
-				<div class="text-center  p-b-20">
-					<a>
-					<span class="txt1">
-						Are you sure you want to grant login access?<br/>
-
-						Only do this when you feel this website is safe enough.
-					</span>
-				</a>
-				</div>
-
-				<input type="text" name="webname" value="">
-
-
-					<div class="flex-c p-t-12 p-b-11">
-					<a href="./denied" class="login10-form-btn">
-						Deny
-					</a>
-				</div>
-					
-					<div class="container-login100-form-btn">
-
-					<button onclick="window.close();" class="login100-form-btn">
-						Allow
-					</button>
-
-					
-				</div>
-
-
+				
 
 
 				
