@@ -1,7 +1,8 @@
 <?php
 include("functions/init.php");
 api_token();
-$result = $_SESSION['result']
+$result = $_SESSION['result'];
+$GLOBALS['z'] = $GLOBALS['result'];
 ?>
 
 
