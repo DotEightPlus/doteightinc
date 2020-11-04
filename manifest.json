@@ -1,6 +1,6 @@
 {
-  "short_name": "DotEightInc",
-  "name": "DotEightInc",
+  "short_name": "DotEightPlus",
+  "name": "DotEightPlus",
   "description": "Providing campus solutions",
   "lang": "en",
   "icons": [
@@ -17,6 +17,6 @@
   "display": "standalone",
   "related_applications": [{
     "platform": "web",
-    "url": "https://doteightinc.com"
+    "url": "https://doteightplus.com"
   }]
 }
