@@ -12,7 +12,7 @@ if(!isset($_SESSION['apisent'])) {
 
 
 	$to 		= $email;
-    $from 		= "noreply@doteightinc.com";
+    $from 		= "noreply@doteightplus.com";
 
 
     $headers = "From: $from";
@@ -23,12 +23,12 @@ if(!isset($_SESSION['apisent'])) {
 
     $subject = "Token Code";
 
-    $logo = 'https://dotaccount.doteightinc.com/images/white.svg';
-    $url  = 'https://dotaccount.doteightinc.com';
+    $logo = 'https://dotaccount.doteightplus.com/images/white.svg';
+    $url  = 'https://dotaccount.doteightplus.com';
     
-	$body = "<!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'><title>DotAccount - DotEightInc</title></head><body style='text-align: center;'>";
+	$body = "<!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'><title>DotAccount - DotEightPlus</title></head><body style='text-align: center;'>";
 	$body .= "<section style='margin: 30px; margin-top: 50px ; background: #FF0000; color: white;'>";
-	$body .= "<img style='margin-top: 35px; width: 50px; height: 50px;' src='{$logo}' alt='DotAccount - DotEightInc'>";
+	$body .= "<img style='margin-top: 35px; width: 50px; height: 50px;' src='{$logo}' alt='DotAccount - DotEightPlus'>";
 	$body .= "<h1 style='margin-top: 45px; color: #ffffff'><strong>Account Sign-in</strong></h1>
 		<br/>";
 	$body .= "<p style='margin-left: 45px; margin-top: 34px; text-align: left; font-size: 17px;'>Hi there!. Use the below token code to complete your sign in. </p>
@@ -38,7 +38,7 @@ if(!isset($_SESSION['apisent'])) {
 	$body .= "<p style='margin-left: 45px; text-align: left;'><a href='#' style='color: #fbb710; text-decoration: none'>{$token} - is your token code</a></p>
 		<br/>";
 	$body .= "<p style='margin-left: 45px; text-align: left;'>For Support, call or chat: 08103171902</p>";	
-	$body .= "<p style='margin-left: 45px; text-align: left;'>or write to: support@doteightinc.com</p>
+	$body .= "<p style='margin-left: 45px; text-align: left;'>or write to: support@doteightplus.com</p>
 		<br/>";	
 	$body .= "<p style='margin-left: 45px; text-align: left;'>Best Regards</p>";	
 	$body .= "<p style='margin-left: 45px; text-align: left; padding-bottom: 50px;'><i>Dot Team</i></p>";	
@@ -56,7 +56,7 @@ if(!isset($_SESSION['apisent'])) {
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>DotAccount - DotEightInc</title>
+	<title>DotAccount - DotEightPlus</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->	
